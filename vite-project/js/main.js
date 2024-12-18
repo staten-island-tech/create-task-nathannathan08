@@ -1,3 +1,4 @@
+import '../css/style.css';
 
 let balance = 2000;
 let wins = 0;
@@ -18,7 +19,7 @@ function flipCoin(guess) {
     
     
     if (guess === flipResult) {
-        resultMessage = `You guessed ${guess}, and the coin landed on ${flipResult}. You can't stop winning!!!! You won $${betAmount}!`;
+        resultMessage = `You guessed ${guess}, and the coin landed on ${flipResult}! You can't stop winning!!!! You won $${betAmount}!`;
         balance += betAmount;
         wins++;
 

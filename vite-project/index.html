@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Create Task Website</title>
   </head>
-                     
+
   <body>
     <h1>Bet on a Coin Flip!</h1>
    
-        <p>Your current balance: $<span id="balance"></span></p>
+     <p>Your current balance: $<span id="balance"></span></p>
 
       <div>
-      <input type="number" id="betAmount" placeholder="Enter bet amount" />
+      <input type="number" id="betAmount" placeholder="Place your bets!" />
       <button class="button" id="headsButton">Heads</button>
       <button class="button" id="tailsButton">Tails</button>
     </div>
@@ -24,7 +24,6 @@
     <p>Wins:<span id="wins">0</span></p>
     <p>Losses:<span id="losses">0</span></p>
     
-    
-    <script src="js/main.js"></script>
+    <script src="js/main.js" type="module"></script>
   </body>
 </html>
