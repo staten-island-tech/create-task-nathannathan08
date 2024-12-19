@@ -22,12 +22,15 @@ function flipCoin(guess) {
         resultMessage = `You guessed ${guess}, and the coin landed on ${flipResult}! You can't stop winning!!!! You won $${betAmount}!`;
         balance += betAmount;
         wins++;
+        document.getElementById("result").classList.add('win-message');
 
     } else {
         resultMessage = `You guessed ${guess}, but the coin landed on ${flipResult}. Aw dangit! You lost $${betAmount}.`;
         balance -= betAmount;
         losses++;
+        document.getElementById("result").classList.add('lose-message');
     }
+
 
     document.getElementById("result").insertAdjacentHTML('beforeend', resultMessage); 
     document.getElementById("balance").innerHTML = balance.toFixed(2); 
@@ -45,4 +48,8 @@ document.getElementById('headsButton').addEventListener('click', () => {
 
 document.getElementById('tailsButton').addEventListener('click', () => {
     flipCoin('tails');
+});
+document.getElementById('ninetybetButton').addEventListener('click', () => {
+    let bet90 = (balance * 0.90).toFixed(2); 
+    document.getElementById('betAmount').value = bet90; 
 });
