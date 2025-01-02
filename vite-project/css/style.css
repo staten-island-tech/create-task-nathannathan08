@@ -61,14 +61,14 @@ p {
   color: rgb(202, 0, 34);
   }
  
-  .win-message {
-    color: rgb(0, 233, 58);
+.win-message {
+    color: rgb(0, 233, 58) !important;
     font-weight: bold;
     font-size: 1.2em;
 }
 
 .lose-message {
-    color: rgb(202, 0, 34);
+    color: rgb(202, 0, 34) !important;
     font-weight: bold;
     font-size: 1.2em;
 }
