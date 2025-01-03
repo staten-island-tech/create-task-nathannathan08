@@ -21,10 +21,10 @@ body{
 }
 
 .button {
-  background-color: rgb(59, 101, 148);
+  background-color: rgb(13, 112, 116);
   padding: 10px 20px;         
   border: none;                
-  color: rgb(234, 254, 255);              
+  color: rgb(236, 254, 255);              
   font-size: 18px;          
   border-radius: 5px;                   
 }
@@ -37,13 +37,6 @@ h1 {
   align-items: center;
   font-size: 60px;
 }
-p {
-    color: rgb(33, 255, 244);
-    display: flex;
-    margin: 3rem 0;
-    flex-direction: column;
-    align-items: center;
-  }
 
   div {
     display: flex;
@@ -56,19 +49,49 @@ p {
 
 #wins {
   color: rgb(0, 233, 58);
+  font-size: 28px;
   }
+  
+
 #losses {
   color: rgb(202, 0, 34);
+  font-size: 28px;
   }
- 
-.win-message {
-    color: rgb(0, 233, 58) !important;
+
+  .win-message {
+    color: rgb(0, 233, 58);
+    font-weight: bold;
+    font-size: 1.2em;
+} 
+
+  .lose-message {
+    color: rgb(202, 0, 34);
     font-weight: bold;
     font-size: 1.2em;
 }
 
-.lose-message {
-    color: rgb(202, 0, 34) !important;
-    font-weight: bold;
-    font-size: 1.2em;
-}
+p {
+    color: rgb(33, 255, 244);
+    display: flex;
+    margin: 3rem 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  w {
+    color: rgb(0, 233, 58);
+    display: flex;
+    margin: 3rem 0;
+    flex-direction: column;
+    align-items: center;
+    font-size: 28px;
+  }
+
+  l {
+    color: rgb(202, 0, 34);
+    display: flex;
+    margin: 3rem 0;
+    flex-direction: column;
+    align-items: center;
+    font-size: 28px;
+  }
