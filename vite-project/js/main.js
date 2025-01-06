@@ -53,3 +53,7 @@ document.getElementById('ninetybetButton').addEventListener('click', () => {
     let bet90 = (balance * 0.90).toFixed(2); 
     document.getElementById('betAmount').value = bet90; 
 });         //multiples balance by 0.9, giving u 90% of the bet then inputs it into the betting bar
+
+//sequencing - sets the values of balance, wins, losses at the beginning. also event listeners and function at the beginning
+//selection - whether or not you are allowed to place your bet amount (if it is zero or less you are rejected),  which coin result to choose at random. and whether or not you won or lost based on your choice
+// the iteration (repeating and loops) comes in the form of the function calls. this repeats the function everytime the button is clicked.
