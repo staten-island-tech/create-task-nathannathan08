@@ -51,13 +51,15 @@ h1 {
   color: rgb(0, 233, 58);
   font-size: 28px;
   }
-  
 
 #losses {
   color: rgb(202, 0, 34);
   font-size: 28px;
   }
 
+  #balance {
+    font-size: 28px;
+  }
   .win-message {
     color: rgb(0, 233, 58);
     font-weight: bold;
@@ -76,6 +78,7 @@ p {
     margin: 3rem 0;
     flex-direction: column;
     align-items: center;
+    font-size: 28px;
   }
 
   w {

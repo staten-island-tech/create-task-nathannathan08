@@ -1,6 +1,6 @@
 import '../css/style.css';
     
-let balance = 2000;           //sets the balance u start with as 2000
+let balance = 2000;          
 let wins = 0;
 let losses = 0;
 function flipCoin(guess) {
@@ -11,11 +11,11 @@ function flipCoin(guess) {
     if (isNaN(betAmount) || betAmount <= 0) {
         alert("You can't bet zero dollars.");
         return;
-    }        //detects if bet amount is less than or equal to 0 and alerts the user if it is
+    }       
     
   document.getElementById("result").innerHTML = "";
 
-    let flipResult = Math.random() < 0.5 ? 'heads' : 'tails';    //gives two options w a 0.5/1 chance 4 both
+    let flipResult = Math.random() < 0.5 ? 'heads' : 'tails';  
     
     
     if (guess === flipResult) {
@@ -35,7 +35,7 @@ function flipCoin(guess) {
     document.getElementById("result").insertAdjacentHTML('beforeend', resultMessage); 
     document.getElementById("balance").innerHTML = balance.toFixed(2); 
     document.getElementById("wins").innerHTML = wins;
-    document.getElementById("losses").innerHTML = losses;    //updates
+    document.getElementById("losses").innerHTML = losses;   
 }
 
 document.getElementById("balance").innerHTML = balance.toFixed(2);
@@ -52,8 +52,4 @@ document.getElementById('tailsButton').addEventListener('click', () => {
 document.getElementById('ninetybetButton').addEventListener('click', () => {
     let bet90 = (balance * 0.90).toFixed(2); 
     document.getElementById('betAmount').value = bet90; 
-});         //multiples balance by 0.9, giving u 90% of the bet then inputs it into the betting bar
-
-//sequencing - sets the values of balance, wins, losses at the beginning. also event listeners and function at the beginning
-//selection - whether or not you are allowed to place your bet amount (if it is zero or less you are rejected),  which coin result to choose at random. and whether or not you won or lost based on your choice
-// the iteration (repeating and loops) comes in the form of the function calls. this repeats the function everytime the button is clicked.
+});        
