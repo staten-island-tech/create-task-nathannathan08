@@ -60,17 +60,7 @@ h1 {
   #balance {
     font-size: 28px;
   }
-  .win-message {
-    color: rgb(0, 233, 58);
-    font-weight: bold;
-    font-size: 1.2em;
-} 
 
-  .lose-message {
-    color: rgb(202, 0, 34);
-    font-weight: bold;
-    font-size: 1.2em;
-}
 
 p {
     color: rgb(33, 255, 244);

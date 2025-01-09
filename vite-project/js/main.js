@@ -1,5 +1,4 @@
-import '../css/style.css';
-    
+import '../css/style.css';   
 let balance = 2000;          
 let wins = 0;
 let losses = 0;
@@ -12,7 +11,6 @@ function flipCoin(guess) {
         return;
     }       
   document.getElementById("result").innerHTML = "";
-
     let flipResult = Math.random() < 0.5 ? 'heads' : 'tails';  
     let gameOutcome = {
         guess: guess,
@@ -20,7 +18,6 @@ function flipCoin(guess) {
         betAmount: betAmount,
         win: false 
     };
-
     if (guess === flipResult) {
         resultMessage = `You guessed ${guess}, and the coin landed on ${flipResult}! You can't stop winning!!!! You won $${betAmount}!`;
         document.getElementById("result").classList.add('win-message');    
@@ -33,18 +30,15 @@ function flipCoin(guess) {
         balance -= betAmount;
         losses++;        
     }
-
     document.getElementById("result").insertAdjacentHTML('beforeend', resultMessage); 
     document.getElementById("balance").innerHTML = balance.toFixed(2); 
     document.getElementById("wins").innerHTML = wins;
     document.getElementById("losses").innerHTML = losses;   
     gameHistory.push(gameOutcome);
 }
-
 document.getElementById("balance").innerHTML = balance.toFixed(2);
 document.getElementById("wins").innerHTML = wins;
 document.getElementById("losses").innerHTML = losses;
-
 document.getElementById('headsButton').addEventListener('click', () => {
     flipCoin('heads');
 });
